@@ -1,0 +1,70 @@
+<div>
+  <h4 style="color: red;">{{ack}}</h4><br/>
+  <div class="header">
+    <div class="c1">
+      <div class="row">
+        <input
+          type="text"
+          placeholder=" Enter City Name..."
+          class="city"
+          style="font-size: 20px"
+          
+        />
+        &nbsp;&nbsp;<button id="sub" (click)="get()">Submit</button>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="c2">
+    <div class="row">
+      <img src=""/>
+    </div>
+  </div>
+  <div class="container">
+    <div class="upper-data">
+    <img src={{img}} />
+
+      <div class="weather-data">
+        <div class="location">{{ city }}</div>
+        <div class="temperature">{{ temp }} &#8451;</div>
+      </div>
+    </div>
+
+    <div class="lower-data">
+      <div class="more-info-label">More Information</div>
+      <div class="more-info-container">
+        <div class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/feelslike.jpg" />
+            <span>feelslike</span>
+          </div>
+          <div class="info-block-value">{{ feelslike }} &#8451;</div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/pressure.jpg" />
+            <span>pressure</span>
+          </div>
+          <div class="info-block-value">{{ pressure }} &#8451;</div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/humidity.jpg" />
+            <span>humidity</span>
+          </div>
+          <div class="info-block-value">{{ humid }} %</div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/wind.jpg" />
+            <span>wind</span>
+          </div>
+          <div class="info-block-value">{{ wind }}-km/h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

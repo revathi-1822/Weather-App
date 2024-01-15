@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3C429E;
+}
